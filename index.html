@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Tecnologias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <div class="container">
+
+        <h1>Cadastro de Tecnologias Web</h1>
+
+        <input type="text" id="nome" placeholder="Nome da tecnologia">
+
+        <textarea id="descricao" placeholder="Descrição resumida"></textarea>
+
+        <button onclick="cadastrarTecnologia()">
+            Cadastrar
+        </button>
+
+        <!-- Campo de pesquisa (melhoria extra) -->
+        <input
+            type="text"
+            id="pesquisa"
+            placeholder="Pesquisar tecnologia"
+            onkeyup="filtrarTecnologias()"
+        >
+
+        <p id="contador">
+            Total: 0 tecnologias cadastradas
+        </p>
+
+        <div id="lista"></div>
+
+    </div>
+
+    <script src="rec.js"></script>
+
+</body>
+</html>
